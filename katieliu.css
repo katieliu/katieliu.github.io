@@ -1,0 +1,301 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html{
+	font-size:16px;
+}
+body{
+	width:100%;
+	background-image:url("paper.jpg");
+	background-size:cover;
+	background-repeat:none;
+}
+.head{
+	top:40%;
+	left:0px;
+	right:0px;
+	width:60%;
+	margin:auto;
+	position:absolute;
+}
+.head h1 a{
+	font-family:'Indie Flower';
+	font-size: 2em;
+	text-decoration:none;
+	color:black;
+}
+.head h1{
+	text-align:center;
+}
+.head h1 a:hover{
+	color:#12b9cc;
+}
+.nav{
+	width:20%;
+	position:absolute;
+	top:80%;
+	left:3%;
+}
+.nav nav ul{
+	list-style-type: none;
+}
+.nav nav ul li a{
+	text-decoration:none;
+	font-size:1.4em;
+	color:black;
+	font-family:'Indie Flower';
+}
+.nav ul li a:hover{
+	color:#12b9cc;
+}
+.slider{
+	overflow:hidden;
+	height:20%;
+	width:20%;
+	left:0px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1%;
+	opacity:0.85;
+	position:relative;
+}
+.slider figure div{
+	width:33.3333333%;
+	float:left;
+}
+.slider figure img{
+	width:100%;
+	float:left;
+}
+.slider figure{
+	position:relative;
+	width:300%;
+	margin:0;
+	left:0;
+	animation:10s slidy infinite;
+}
+@keyframes slidy{
+	0%{
+		left:0%;
+	}
+	30%{
+		left:0%;
+	}
+	32%{
+		left:-100%;
+	}
+	62%{
+		left:-100%;
+	}
+	64%{
+		left:-200%;
+	}
+	94%{
+		left:-200%;
+	}
+}
+.about{
+	width:70%;
+	margin:auto;
+	left:5%;
+	right:0px;
+	position:relative;
+	margin-top:15%;
+}
+.about p{
+	text-align:center;
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.sectors{
+	width:20%;
+	position:relative;
+	left:20%;
+	margin-top:13%;
+}
+.sectors p{
+	font-size:2em;
+	font-family:'Indie Flower';
+	text-decoration: underline;
+	position:relative;
+}
+.media{
+	width:20%;
+	position:relative;
+	left:20%;
+}
+.media p{
+	font-size:1.5em;
+	font-family:'Indie Flower';
+}
+.media p a:hover{
+	color:#12b9cc;
+}
+.neshama{
+	width:30%;
+	position:absolute;
+	top:17%;
+	right:5%;
+	margin:auto;
+}
+.neshama p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.neshama img{
+	width:100%;
+}
+.mediatwo{
+	width:20%;
+	position:relative;
+	left:20%;
+	
+}
+.mediatwo p{
+	font-size:1.5em;
+	font-family:'Indie Flower';
+}
+.mediatwo p a:hover{
+	color:#12b9cc;
+}
+.pride{
+	width:30%;
+	position:absolute;
+	top:18%;
+	right:5%;
+	margin:auto;
+}
+.pride p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.pride img{
+	width:100%;
+}
+.sectorstwo{
+	width:20%;
+	position:relative;
+	left:20%;
+}
+.sectorstwo p{
+	font-size:2em;
+	font-family:'Indie Flower';
+	text-decoration: underline;
+}
+.mediathree{
+	width:20%;
+	position:relative;
+	left:20%;
+}
+.mediathree p{
+	font-size:1.5em;
+	font-family:'Indie Flower';
+}
+.mediathree p a:hover{
+	color:#12b9cc;
+}
+.pusateri{
+	width:30%;
+	position:absolute;
+	top:18%;
+	right:5%;
+	margin:auto;
+}
+.pusateri p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.pusateri img{
+	width:100%;
+}
+.mediafour{
+	width:30%;
+	position:relative;
+	left:20%;
+}
+.mediafour p{
+	font-size:1.5em;
+	font-family:'Indie Flower';
+}
+.mediafour p a:hover{
+	color:#12b9cc;
+}
+.city{
+	width:30%;
+	position:absolute;
+	top:12%;
+	right:5%;
+	margin:auto;
+}
+.city p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.city img{
+	width:100%;
+}
+.mediafive{
+	width:30%;
+	position:relative;
+	left:20%;
+}
+.mediafive p{
+	font-size:1.5em;
+	font-family:'Indie Flower';
+	position:relative;
+}
+.mediafive p a:hover{
+	color:#12b9cc;
+}
+.airport{
+	width:30%;
+	top:18%;
+	position:absolute;
+	right:5%;
+	margin:auto;
+}
+.airport p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.airport img{
+	width:100%;
+}
+.photography{
+	width:30%;
+	margin-left:10%;
+	margin-top:14%;
+}
+.photography p{
+	font-family:"Indie Flower";
+	font-size:1.5em;
+	text-align:center;
+	text-decoration:underline;
+	position:relative;
+}
+.photography p:hover{
+	color:#12b9cc;
+}
+.photo{
+	width:70%;
+	margin-left:18%;
+}
+.photo p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.photo p a{
+	color:#ef042b;
+	text-decoration:none;
+}
+.photo p a:hover{
+	color:#12b9cc;
+}
+.photo img{
+	margin-top:0.5%;
+	width:50%;
+	margin-left:20%;
+
+}
