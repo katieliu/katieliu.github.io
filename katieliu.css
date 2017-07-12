@@ -297,5 +297,157 @@ body{
 	margin-top:0.5%;
 	width:50%;
 	margin-left:20%;
-
+}
+@media only screen and (max-width:480),(orientation:portrait){
+	body{
+		background-image:url('lined.png');
+		background-size:cover;
+	}
+	.head h1{
+		font-size:1em;
+	}
+	.head{
+		width:90%;
+		margin-top:50%;
+		position:relative;
+	}
+	.nav{
+		width:50%;
+		margin-top:35%;
+		left:15%;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+	}
+	.nav ul li{
+		font-size:0.8em;
+	}
+	.about{
+		width:90%;
+		position:relative;
+		left:0px;
+		right:0px;
+		margin:auto;
+		margin-top:5%;
+	}
+	.about p{
+		font-size:1em;
+		margin:0px 0px;
+		padding:1% 1%;
+		position:relative;
+	}
+	.slider{
+		width:50%;
+		margin-bottom:5%;
+	}
+	.sectors{
+		width:40%;
+		left:0%;
+	}
+	.sectors p{
+		font-size:1.5em;
+		text-align:center;
+	}
+	.media{
+		width:50%;
+		left:1%;
+	}
+	.media p{
+		font-size:1em;
+	}
+	.neshama{
+		width:50%;
+		top:50%;
+		left:49%;
+	}
+	.neshama p{
+		font-size:1em;
+	}
+	.mediatwo{
+		width:50%;
+		left:1%;
+	}
+	.mediatwo p{
+		font-size:1em;
+	}
+	.pride{
+		width:50%;
+		top:50%;
+		left:49%;
+	}
+	.pride p{
+		font-size:1em;
+	}
+	.sectorstwo{
+		width:40%;
+		left:0%;
+	}
+	.sectorstwo p{
+		font-size:1.5em;
+		text-align:center;
+	}
+	.mediathree{
+		width:50%;
+		left:1%;
+	}
+	.mediathree p{
+		font-size:1em;
+	}
+	.pusateri{
+		width:50%;
+		top:50%;
+		left:49%;
+	}
+	.pusateri p{
+		font-size:1em;
+	}
+	.mediafour{
+		width:50%;
+		left:1%;
+	}
+	.mediafour p{
+		font-size:1em;
+	}
+	.city{
+		width:50%;
+		top:50%;
+		left:48%;
+	}
+	.city p{
+		font-size:1em;
+	}
+	.mediafive{
+		width:50%;
+		left:1%;
+	}
+	.mediafive p{
+		font-size:1em;
+	}
+	.airport{
+		width:50%;
+		top:50%;
+		left:49%;
+	}
+	.airport p{
+		font-size:1em;
+	}
+	.photography{
+		width:50%;
+		left:0px;
+		right:0px;
+		margin:auto;
+		margin-top:5%;
+	}
+	.photography p{
+		text-align:center;
+	}
+	.photo{
+		width:90%;
+		left:0px;
+		right:0px;
+		margin:auto;
+	}
+	.photo p{
+		font-size:1em;
+	}
 }
