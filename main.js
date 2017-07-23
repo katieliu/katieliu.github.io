@@ -143,11 +143,12 @@ function main(){
 	$('.webdev').slideDown(500);
 
 	$('.photography').on('click',function(){
-		$('.photo').toggle(1000);
-		
+		$('.photo').slideDown(1000);
+		$('.phototwo').slideUp(200);
 	});
 	$('.webdev').on('click',function(){
-		$('.phototwo').toggle(1000);
+		$('.phototwo').slideDown(1000);
+		$('.photo').slideUp(200);
 	});
 
 
