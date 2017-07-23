@@ -19,6 +19,8 @@ function main(){
 	$('.airport').hide();
 	$('.photography').hide();
 	$('.photo').hide();
+	$('.webdev').hide();
+	$('.phototwo').hide();
 	//Homepage//
 	$('.home').on("click", function(){
 	$('.head').fadeIn(5000);
@@ -39,6 +41,8 @@ function main(){
 	$('.airport').hide();
 	$('.photography').hide();
 	$('.photo').hide();
+	$('.webdev').hide();
+	$('.phototwo').hide();
 	});
 	//Who Am I page//
 	$('.whoami').on("click", function(){
@@ -59,6 +63,8 @@ function main(){
 	$('.airport').hide();
 	$('.photography').hide();
 	$('.photo').hide();
+	$('.webdev').hide();
+	$('.phototwo').hide();
 	});
 	//Experiences Page//
 	$('.exp').on("click",function(){
@@ -67,6 +73,8 @@ function main(){
 	$('.about').hide();
 	$('.photography').hide();
 	$('.photo').hide();
+	$('.webdev').hide();
+	$('.phototwo').hide();
 	$('.sectors').fadeIn(1000);
 	$('.media').fadeIn(2000);
 	$('.sectorstwo').fadeIn(1000);
@@ -130,11 +138,18 @@ function main(){
 	$('.mediafive').hide();
 	$('.airport').hide();
 	$('.photo').hide();
+	$('.phototwo').hide();
 	$('.photography').slideDown(500);
+	$('.webdev').slideDown(500);
 
 	$('.photography').on('click',function(){
-		$('.photo').slideDown(1000);
+		$('.photo').toggle(1000);
+		
 	});
+	$('.webdev').on('click',function(){
+		$('.phototwo').toggle(1000);
+	});
+
 
 
 	});

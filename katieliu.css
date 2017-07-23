@@ -264,7 +264,7 @@ body{
 	width:100%;
 }
 .photography{
-	width:30%;
+	width:20%;
 	margin-left:10%;
 	margin-top:14%;
 }
@@ -298,6 +298,49 @@ body{
 	width:50%;
 	margin-left:20%;
 }
+
+/*  */
+.webdev{
+	width:20%;
+	margin-top:2%;
+	margin-left:10%;
+}
+.webdev p{
+	font-family:"Indie Flower";
+	font-size:1.5em;
+	text-align:center;
+	text-decoration:underline;
+	position:relative;
+}
+.webdev p:hover{
+	color:#12b9cc;
+}
+.phototwo{
+	width:70%;
+	margin-left:18%;
+}
+.phototwo p{
+	font-family:'Indie Flower';
+	font-size:1.3em;
+}
+.phototwo p a{
+	color:#ef042b;
+	text-decoration:none;
+}
+.phototwo p a:hover{
+	color:#12b9cc;
+}
+.phototwo img{
+	margin-top:0.5%;
+	width:50%;
+	margin-left:20%;
+}
+
+
+/* Media Queries Below!!! */
+
+
+
 @media only screen and (max-width:480),(orientation:portrait){
 	body{
 		background-image:url('lined.png');
@@ -450,4 +493,27 @@ body{
 	.photo p{
 		font-size:1em;
 	}
+
+	
+
+	.webdev{
+		width:50%;
+		left:0px;
+		right:0px;
+		margin:auto;
+		margin-top:5%;
+	}
+	.webdev p{
+		text-align:center;
+	}
+	.phototwo{
+		width:90%;
+		left:0px;
+		right:0px;
+		margin:auto;
+	}
+	.phototwo p{
+		font-size:1em;
+	}
+
 }
