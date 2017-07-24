@@ -21,6 +21,7 @@ function main(){
 	$('.photo').hide();
 	$('.webdev').hide();
 	$('.phototwo').hide();
+	$('.resume').hide();
 	//Homepage//
 	$('.home').on("click", function(){
 	$('.head').fadeIn(5000);
@@ -43,6 +44,7 @@ function main(){
 	$('.photo').hide();
 	$('.webdev').hide();
 	$('.phototwo').hide();
+	$('.resume').hide();
 	});
 	//Who Am I page//
 	$('.whoami').on("click", function(){
@@ -65,6 +67,7 @@ function main(){
 	$('.photo').hide();
 	$('.webdev').hide();
 	$('.phototwo').hide();
+	$('.resume').hide();
 	});
 	//Experiences Page//
 	$('.exp').on("click",function(){
@@ -81,6 +84,7 @@ function main(){
 	$('.mediathree').fadeIn(2000);
 	$('.mediafour').fadeIn(2000);
 	$('.mediafive').fadeIn(2000);
+	$('.resume').slideDown(3500);
 
 
 	$('.media').on('click', function(){
@@ -139,6 +143,7 @@ function main(){
 	$('.airport').hide();
 	$('.photo').hide();
 	$('.phototwo').hide();
+	$('.resume').hide();
 	$('.photography').slideDown(500);
 	$('.webdev').slideDown(500);
 
