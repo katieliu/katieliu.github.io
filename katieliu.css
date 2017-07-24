@@ -263,6 +263,23 @@ body{
 .airport img{
 	width:100%;
 }
+.resume p{
+	font-size:1.5em;
+	font-family:"Indie Flower";
+}
+.resume{
+	width:30%;
+	position:relative;
+	left:20%;
+	margin-top:15%;
+}
+.resume p a{
+	color:black;
+	text-decoration:none;
+}
+.resume p a:hover{
+	color:#12b9cc;
+}
 .photography{
 	width:20%;
 	margin-left:10%;
@@ -491,6 +508,13 @@ body{
 		margin:auto;
 	}
 	.photo p{
+		font-size:1em;
+	}
+	.resume{
+		width:50%;
+		left:1%;
+	}
+	.resume p{
 		font-size:1em;
 	}
 
