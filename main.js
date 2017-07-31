@@ -176,17 +176,16 @@ var name = prompt ('Please Enter Your Name.');
 console.log(name);
 
 if (name === " "){
-	name = prompt('Enter Your Name Please!!!');
-	var newmessage = "Wecome, "+ name ;
-	document.getElementsByClassName('underhead')[0].innerHTML = newmessage ;
+	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
 }else if (name === "  ") {
-	name = prompt('Enter Your Name Please!!!');
-	var newmessage = "Wecome, "+ name ;
-	document.getElementsByClassName('underhead')[0].innerHTML = newmessage ;
-}else if (name === "    "){
-	name = prompt('Enter Your Name Please!!!');
-	var newmessage = "Wecome, "+ name ;
-	document.getElementsByClassName('underhead')[0].innerHTML = newmessage ;
+	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
+}else if (name === ""){
+	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger"; 
+}else if(name === 'null' || name === false){
+	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
+}
+else if (name === "    "){
+	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
 }else{
 	var message = "Welcome, "+ name ;
 	document.getElementsByClassName('underhead')[0].innerHTML = message;
