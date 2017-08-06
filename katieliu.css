@@ -11,6 +11,9 @@ body{
 	background-size:cover;
 	background-repeat:none;
 }
+.hidden{
+	display:none;
+}
 .head{
 	top:40%;
 	left:0px;
@@ -117,15 +120,15 @@ body{
 	right:0px;
 	position:relative;
 	margin-top:15%;
+	text-align:left;
 }
 .about p{
-	text-align:center;
 	font-family:'Indie Flower';
 	font-size:1.3em;
 }
 .about p a{
 	text-decoration:none;
-	color:black;
+	color:red;
 }
 .about p a:hover{
 	color:#12b9cc;

@@ -1,4 +1,5 @@
 function main(){
+	$('.hidden').show();
 	$('.head').hide();
 	$('.head').fadeIn(5000);
 	$('.nav').hide();
@@ -26,7 +27,8 @@ function main(){
 	$('.underhead').slideDown(2000);
 	//Homepage//
 	$('.home').on("click", function(){
-		$('.head').fadeIn(5000);
+		$('.head').hide();
+		$('.head').fadeIn(2000);
 		$('.img').hide();
 		$('.slider').hide();
 		$('.about').hide();
