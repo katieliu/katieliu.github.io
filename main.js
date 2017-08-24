@@ -1,194 +1,91 @@
-function main(){
-	$('.hidden').show();
-	$('.head').hide();
-	$('.head').fadeIn(5000);
-	$('.nav').hide();
-	$('.nav').fadeIn(5000);
-	$('.slider').hide();
-	$('.about').hide();
-	$('.sectors').hide();
-	$('.media').hide();
-	$('.neshama').hide();
-	$('.mediatwo').hide();
-	$('.pride').hide();
-	$('.sectorstwo').hide();
-	$('.mediathree').hide();
-	$('.pusateri').hide();
-	$('.mediafour').hide();
-	$('.city').hide();
-	$('.mediafive').hide();
-	$('.airport').hide();
-	$('.photography').hide();
-	$('.photo').hide();
-	$('.webdev').hide();
-	$('.phototwo').hide();
-	$('.resume').hide();
-	$('.underhead').hide();
-	$('.underhead').slideDown(2000);
-	//Homepage//
-	$('.home').on("click", function(){
-		$('.head').hide();
-		$('.head').fadeIn(2000);
-		$('.img').hide();
-		$('.slider').hide();
-		$('.about').hide();
-		$('.sectors').hide();
-		$('.media').hide();
-		$('.neshama').hide();
-		$('.mediatwo').hide();
-		$('.pride').hide()
-		$('.sectorstwo').hide();
-		$('.mediathree').hide();
-		$('.pusateri').hide();
-		$('.mediafour').hide();
-		$('.city').hide();
-		$('.mediafive').hide();
-		$('.airport').hide();
-		$('.photography').hide();
-		$('.photo').hide();
-		$('.webdev').hide();
-		$('.phototwo').hide();
-		$('.resume').hide();
-		$('.underhead').hide();
-		$('.underhead').slideDown(2000);
-	}); 
-	//Who Am I page//
-	$('.whoami').on("click", function(){
-		$('.head').hide();
-		$('.slider').fadeIn(1200);
-		$('.about').fadeIn(2000);
-		$('.sectors').hide();
-		$('.media').hide();
-		$('.neshama').hide();
-		$('.mediatwo').hide();
-		$('.pride').hide()
-		$('.sectorstwo').hide();
-		$('.mediathree').hide();
-		$('.pusateri').hide();
-		$('.mediafour').hide();
-		$('.city').hide();
-		$('.mediafive').hide();
-		$('.airport').hide();
-		$('.photography').hide();
-		$('.photo').hide();
-		$('.webdev').hide();
-		$('.phototwo').hide();
-		$('.resume').hide();
-		$('.underhead').hide();
-	});
-	//Experiences Page//
-	$('.exp').on("click",function(){
-		$('.head').hide();
-		$('.slider').hide();
-		$('.about').hide();
-		$('.photography').hide();
-		$('.photo').hide();
-		$('.webdev').hide();
-		$('.phototwo').hide();
-		$('.sectors').fadeIn(1000);
-		$('.media').fadeIn(2000);
-		$('.sectorstwo').fadeIn(1000);
-		$('.mediathree').fadeIn(2000);
-		$('.mediafour').fadeIn(2000);
-		$('.mediafive').fadeIn(2000);
-		$('.resume').slideDown(3500);
-		$('.underhead').hide();
+const burgerImage = document.getElementsByClassName('hamburger');
+const drinkImg = document.getElementsByClassName('drink');
+const pizzaImg = document.getElementsByClassName('pizza');
+const donutImg = document.getElementsByClassName('donut');
+let slideIndex = 0;
+let slideIndex2 = 0;
+let slideIndex3 = 0;
+let slideIndex4 = 0;
+
+window.onload = function (){
+//start page hidden stuff
+    $('.hidden').show();
+    $('#intro').hide();
+    $('#foodOne').hide();
+    $('#foodTwo').hide();
+    $('#foodThree').hide();
+    $('#foodFour').hide();
+    $('#website').hide();
 
 
-	$('.media').on('click', function(){
-		$('.neshama').fadeIn(500);
-		$('.pride').fadeOut();
-		$('.pusateri').fadeOut();
-		$('.city').fadeOut();
-		$('.airport').fadeOut();
-		});
-	$('.mediatwo').fadeIn(2000);
-	$('.mediatwo').on('click', function(){
-		$('.pride').fadeIn(500);
-		$('.neshama').fadeOut();
-		$('.pusateri').fadeOut();
-		$('.city').fadeOut();
-		$('.airport').fadeOut();
-		});
-	$('.mediathree').on('click', function(){
-		$('.pusateri').fadeIn(500);
-		$('.pride').fadeOut();
-		$('.neshama').fadeOut();
-		$('.city').fadeOut();
-		$('.airport').fadeOut();
-		});
-	$('.mediafour').on('click', function(){
-		$('.city').fadeIn(500);
-		$('.pusateri').fadeOut();
-		$('.pride').fadeOut();
-		$('.neshama').fadeOut();
-		$('.airport').fadeOut();
-	});
-	$('.mediafive').on('click',function(){
-		$('.airport').fadeIn(500);
-		$('.city').fadeOut();
-		$('.pusateri').fadeOut();
-		$('.pride').fadeOut();
-		$('.neshama').fadeOut();
-	});
-	});
-	//Skills Page//
-	$('.skills').on("click", function(){
-		$('.head').hide();
-		$('.underhead').hide();
-		$('.slider').hide();
-		$('.about').hide();
-		$('.sectors').hide();
-		$('.media').hide();
-		$('.neshama').hide();
-		$('.mediatwo').hide();
-		$('.pride').hide()
-		$('.sectorstwo').hide();
-		$('.mediathree').hide();
-		$('.pusateri').hide();
-		$('.mediafour').hide();
-		$('.city').hide();
-		$('.mediafive').hide();
-		$('.airport').hide();
-		$('.photo').hide();
-		$('.phototwo').hide();
-		$('.resume').hide();
-		$('.photography').slideDown(500);
-		$('.webdev').slideDown(500);
+//Intro animations//
+    $('#intro').delay(1000);
+    $('#intro').fadeIn(1000);
+    $('#foodOne').delay(2500);
+    $('#foodOne').fadeIn(500);
+    burger(); 
 
-
-	$('.photography').on('click',function(){
-		$('.photo').slideDown(1000);
-		$('.phototwo').slideUp(200);
-	});
-	$('.webdev').on('click',function(){
-		$('.phototwo').slideDown(1000);
-		$('.photo').slideUp(200);
-	});
+    function burger(){
+        for(x=0; x<burgerImage.length; x++){
+            burgerImage[x].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > burgerImage.length){slideIndex=1}
+        burgerImage[slideIndex-1].style.display = "block";
+        setTimeout(burger, 250);
+    }
+    $('#foodOne').on('click',() => {
+        drink();
+        $('#intro').fadeOut(1000);
+        $('#foodOne').fadeOut(1000);
+        $('#foodTwo').delay(1000);
+        $('#foodTwo').fadeIn(1000);
+    })
+    function drink(){
+        for(i=0; i<drinkImg.length; i++){
+            drinkImg[i].style.display = "none";
+        }
+        slideIndex2++;
+        if(slideIndex2 > drinkImg.length){slideIndex2=1}
+        drinkImg[slideIndex2-1].style.display = "block";
+        setTimeout(drink, 250);
+    }
+    $('#foodTwo').on('click',() => { 
+        pizza();
+        $('#foodTwo').fadeOut(1000);
+        $('#foodThree').delay(1000);
+        $('#foodThree').fadeIn(1000);
+    })
+    function pizza(){
+        for(y=0; y<pizzaImg.length; y++){
+            pizzaImg[y].style.display = "none";
+        }
+        slideIndex3++;
+        if(slideIndex3 > pizzaImg.length){slideIndex3=1}
+       pizzaImg[slideIndex3-1].style.display = "block";
+        setTimeout(pizza, 250);
+    }
+    $('#foodThree').on('click',() => {
+        donut();
+        $('#foodThree').fadeOut(1000);
+        $('#foodFour').delay(1000);
+        $('#foodFour').fadeIn(1000);
+    })
+    function donut(){
+        for(z=0; z<donutImg.length; z++){
+            donutImg[z].style.display = "none";
+        }
+        slideIndex4++;
+        if(slideIndex4 > donutImg.length){slideIndex4=1}
+       donutImg[slideIndex4-1].style.display = "block";
+        setTimeout(donut, 250);
+    }
+    $('#foodFour').on('click', ()=>{
+        $('#foodFour').fadeOut(1000);
+        $('#website').delay(1000);
+        $('#website').fadeIn(1000);
+    })
 
 
 
-	});
-
-
-}
-
-$(document).ready(main);
-var name = prompt ('Please Enter Your Name.');
-console.log(name);
-
-if (name === " "){
-	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
-}else if (name === "  ") {
-	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
-}else if (name === ""){
-	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger"; 
-}else if(name === 'null' || name === false){
-	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
-}
-else if (name === "    "){
-	document.getElementsByClassName('underhead')[0].innerHTML = "Welcome, stranger";
-}else{
-	var message = "Welcome, "+ name ;
-	document.getElementsByClassName('underhead')[0].innerHTML = message;
 }
