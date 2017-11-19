@@ -166,6 +166,52 @@ a{
     font-weight:bold;
     text-shadow:2px 2px 8px rgb(37, 37, 37);
 }
+.bg-halfscreen-2{
+    width:100%;
+    height:50vh;
+    background: url('https://static1.squarespace.com/static/576956f8579fb3601c089d77/576993f115d5db4f5e1f8d79/5769963f37c5815493445aef/1492028726264/LucyHawthornePhotography-26.jpg?format=1000w');
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center top;
+}
+.bg-halfscreen-2 h1{
+    color:white;
+    padding-top:5%;
+    font-size:4em;
+    font-family:'Impact', sans-serif;
+    text-shadow:2px 2px 8px rgb(37, 37, 37);
+}
+.bg-halfscreen-2 p{
+    color:white;
+    font-size:1.4em;
+    letter-spacing: 2px;
+    font-family:'Impact';
+    font-weight:bold;
+    text-shadow:2px 2px 8px rgb(37, 37, 37);
+}
+.bg-halfscreen-3{
+    width:100%;
+    height:50vh;
+    background: url('http://images.dailyhive.com/20160518130456/Pride_Toronto_2014_WorldPride_Pride_Parade_Photo_by_Scott_Corman_006.jpg');
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:bottom bottom;
+}
+.bg-halfscreen-3 h1{
+    color:white;
+    padding-top:5%;
+    font-size:4em;
+    font-family:'Impact', sans-serif;
+    text-shadow:2px 2px 8px rgb(37, 37, 37);
+}
+.bg-halfscreen-3 p{
+    color:white;
+    font-size:1.4em;
+    letter-spacing: 2px;
+    font-family:'Impact';
+    font-weight:bold;
+    text-shadow:2px 2px 8px rgb(37, 37, 37);
+}
 .foodies{
     margin-top:-50px;
     background-color:white;
@@ -178,6 +224,13 @@ a{
 .foodies img{
     width:100%;
     box-shadow: 1px 1px 8px grey;
+}
+.foodies h1 a{
+    color:black;
+}
+.time-event{
+    color:grey;
+    font-size:1em;
 }
 .description{
     padding:5%;
@@ -215,6 +268,38 @@ a{
         text-shadow:2px 2px 8px rgb(37, 37, 37);
     }
     .bg-halfscreen p{
+        display:none;
+        color:white;
+        font-size:1em;
+        letter-spacing: 2px;
+        font-family:'Impact';
+        font-weight:bold;
+        text-shadow:2px 2px 8px rgb(37, 37, 37);
+    }
+    .bg-halfscreen-2 h1{
+        color:white;
+        padding-top:10%;
+        font-size:2em;
+        font-family:'Impact', sans-serif;
+        text-shadow:2px 2px 8px rgb(37, 37, 37);
+    }
+    .bg-halfscreen-2 p{
+        display:none;
+        color:white;
+        font-size:1em;
+        letter-spacing: 2px;
+        font-family:'Impact';
+        font-weight:bold;
+        text-shadow:2px 2px 8px rgb(37, 37, 37);
+    }
+    .bg-halfscreen-3 h1{
+        color:white;
+        padding-top:10%;
+        font-size:2em;
+        font-family:'Impact', sans-serif;
+        text-shadow:2px 2px 8px rgb(37, 37, 37);
+    }
+    .bg-halfscreen-3 p{
         display:none;
         color:white;
         font-size:1em;
