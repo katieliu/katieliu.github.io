@@ -17,7 +17,6 @@ a{
     height:100%;
     text-align: center;
     font-size: 18px;
-    background: #fff;
     background-size:cover;
     background-attachment:fixed;
     background-position:center bottom;
@@ -43,7 +42,7 @@ a{
   }
   .nav{
       width:100%;
-      background-color:black;
+      background: -webkit-linear-gradient(right bottom, rgb(57, 162, 248), rgb(1, 20, 53));
   }
 .bg-slide{
     padding:2%;
@@ -58,24 +57,29 @@ a{
     text-align:center;
 }
 .title{
-    color:rgb(13, 62, 102);
+    padding:3%;
+    color:rgb(8, 120, 190);
+    letter-spacing:2px;
     font-size:2em;
-    font-weight:bold;
+    text-transform:uppercase;
+}
+.padded {
+    padding: 0 5%;
 }
 #learnmore{
-    margin-top:5%;
+    margin-top:15%;
 }
 #learnmore img{
     width:100%;
     height:30vh;
-    border:1px solid grey;
-    border-radius: 15px;
     box-shadow:1px 1px 8px grey;
 }
 #learnmore p {
     text-align:left;
-    padding:5%;
-    font-size:1.5em;
+    padding:2 5%;
+    font-size:1em;
+    color:rgb(168, 167, 167);
+    text-align:left;
 }
 #food img{
     width:100%;
@@ -93,13 +97,43 @@ a{
     color:rgb(25, 79, 116);
     text-decoration:underline;
 }
+#foodies{
+    width:100%;
+    height:50vh;
+    background: url('https://scottsdalerealestate.com/wp-content/uploads/2016/05/412086.jpg');
+    background-attachment:fixed;
+    background-size:cover;
+}
+#music-fixed{
+    margin-top:3%;
+    width:100%;
+    height:50vh;
+    background: url('http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/04/2015Drake_GettyImages-479379298_master060715-3.jpg');
+    background-attachment:fixed;
+    background-size:cover;
+}
+#music-fixed p{
+    color:rgb(209, 209, 209);
+    padding: 0 5%;
+    font-size:1.3em;
+}
+.padded-button{
+    padding: 0 5%;
+}
+#foodies hr{
+    border:1px double white;
+}
+#foodies p{
+    color:rgb(209, 209, 209);
+    padding: 0 5%;
+    font-size:1.3em;
+}
 #music img{
     width:100%;
     height:30vh;
-    border:1px solid grey;
-    border-radius: 15px;
     box-shadow:1px 1px 8px grey;
 }
+
 #music p {
     text-align:left;
     padding:5%;
@@ -110,7 +144,6 @@ a{
     text-decoration:underline;
 }
 #footer{
-    margin-top:5%;
     background: -webkit-linear-gradient(left bottom, rgb(57, 162, 248), rgb(1, 20, 53));
 }
 #footer h1{
@@ -144,10 +177,65 @@ a{
     background: rgb(24, 27, 31);
     padding:5%;
 }
+.images h1{
+    padding-top:5%;
+    color:rgb(1, 160, 168);
+    font-size:1.2em;
+}
+
+.header-text{
+    position:absolute;
+    background: -webkit-linear-gradient(right bottom, rgb(108, 180, 247), rgb(2, 21, 85));
+    width:20%;
+    top:60%;
+    left:0px;
+    right:0px;
+    margin:auto;
+    text-align:center;
+    box-shadow: 2px 3px 8px grey;
+    background-color:white;
+    padding:3%;
+    height:30vh;
+}
+.header-text h1{
+    font-family: 'Open Sans', cursive;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color: white;
+    font-size:2em;
+}
+.bg-fullscreen{
+    z-index:-9;
+    width:100%;
+    height:70vh;
+   /* background: url('http://timecaptures.com/wp-content/uploads/2015/07/Toronto-4654-Bearbeitet.jpg'); */
+    background-size:cover;
+    background-position:center center;
+    overflow:hidden;
+}
+.bg-layer{
+    position:absolute;
+    width:100%;
+    height:70vh;
+    /* background:-webkit-linear-gradient(right bottom, rgb(2, 35, 78), rgb(1, 25, 39)); */
+    overflow:hidden;
+}
+.bg-layer img{
+    width:100%;
+    height:100%;
+}
+.bg-video{
+    width:100%;
+    height:100%;
+    overflow:hidden
+}
+.bg-video video{
+
+}
 .bg-halfscreen{
     width:100%;
     height:50vh;
-    background: url('https://static01.nyt.com/images/2015/01/14/dining/20150114-PRIME-slide-F0S4/20150114-PRIME-slide-F0S4-master1050.jpg');
+    background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-550483.jpg');
     background-attachment:fixed;
     background-size:cover;
 }
@@ -192,7 +280,7 @@ a{
 .bg-halfscreen-3{
     width:100%;
     height:50vh;
-    background: url('http://images.dailyhive.com/20160518130456/Pride_Toronto_2014_WorldPride_Pride_Parade_Photo_by_Scott_Corman_006.jpg');
+    background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-156811.jpg');
     background-attachment:fixed;
     background-size:cover;
     background-position:bottom bottom;
