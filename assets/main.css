@@ -1,9 +1,12 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 a{
     color:white;
     transition:1s color ease;
+}
+a:hover{
+    color: grey;
 }
 .swiper-container {
     width: 100%;
@@ -41,6 +44,10 @@ a{
       z-index:-1;
   }
   .nav{
+      font-family: 'Poiret One', cursive;
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:1em;
       width:100%;
       background: -webkit-linear-gradient(right bottom, rgb(57, 162, 248), rgb(1, 20, 53));
   }
@@ -124,7 +131,7 @@ a{
     border:1px double white;
 }
 #foodies p{
-    color:rgb(209, 209, 209);
+    color:rgb(235, 235, 235);
     padding: 0 5%;
     font-size:1.3em;
 }
@@ -194,12 +201,11 @@ a{
     text-align:center;
     box-shadow: 2px 3px 8px grey;
     background-color:white;
-    padding:3%;
+    padding:2%;
     height:30vh;
 }
 .header-text h1{
-    font-family: 'Open Sans', cursive;
-    text-transform:uppercase;
+    font-family: 'Poiret One', cursive;
     letter-spacing:1px;
     color: white;
     font-size:2em;
