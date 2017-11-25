@@ -124,6 +124,31 @@ a:hover{
     padding: 0 5%;
     font-size:1.3em;
 }
+.boxed{
+    box-shadow:2px 2px 8px grey;
+    margin-bottom:3%;
+}
+#food-display-fixed{
+    margin-top:3%;
+    width:100%;
+    height:50vh;
+    background: url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAW8AAAAJGEzM2U5OTMwLTJlMWItNGI1Ny04NWZjLTZkYTA0N2Y0YjViYw.jpg');
+    background-attachment:fixed;
+    background-size:cover;
+}
+#food-display-fixed p{
+    color:rgb(209, 209, 209);
+    padding: 0 5%;
+    font-size:1.3em;
+}
+#entertainment-display-fixed{
+    margin-top:3%;
+    width:100%;
+    height:50vh;
+    background: url('http://media.blogto.com/articles/20161022-rebel2048-01.jpg?width=1300&quality=70');
+    background-attachment:fixed;
+    background-size:cover;
+}
 .padded-button{
     padding: 0 5%;
 }
@@ -263,10 +288,10 @@ a:hover{
 .bg-halfscreen-2{
     width:100%;
     height:50vh;
-    background: url('https://static1.squarespace.com/static/576956f8579fb3601c089d77/576993f115d5db4f5e1f8d79/5769963f37c5815493445aef/1492028726264/LucyHawthornePhotography-26.jpg?format=1000w');
-    background-attachment:fixed;
+    background: url('https://cdn.pixabay.com/photo/2017/10/01/13/28/music-2805506_1280.jpg');
+  
     background-size:cover;
-    background-position:center top;
+    background-position:center center;
 }
 .bg-halfscreen-2 h1{
     color:white;
@@ -351,8 +376,23 @@ a:hover{
     .bg-slide{
         width:100%;
     }
+    .bg-fullscreen{
+        display:none;
+    }
+    .header-text{
+        margin-top:5%;
+        margin-bottom:5%;
+        position:relative;
+        width:80%;
+    }
+    iframe{
+        width:100%;
+    }
     .nav a{
-        font-size:0.7em;
+        font-size:0.5em;
+    }
+    .nav{
+        position:relative;
     }
     .bg-halfscreen h1{
         color:white;
